@@ -4,8 +4,8 @@ function TodoList({ listedItem, toggleTodo, deleteTodo }) {
   return (
     <>
      
-
-      {/* Header for List */}
+      <div id="listing flex flex-column justify-center">
+        
       <h1 className="header">Todo List: </h1>
       <ul className="list">
         {listedItem.map((eachListedItem) => {
@@ -19,6 +19,8 @@ function TodoList({ listedItem, toggleTodo, deleteTodo }) {
           );
         })}
       </ul>
+        </div>
+        {/* Header for List */}
     </>
   );
 }

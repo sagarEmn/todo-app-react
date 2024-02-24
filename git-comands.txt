@@ -1,0 +1,10 @@
+unstage all changes:
+git reset HEAD
+- removes all changes from the staging area but keeps them in your working directory.
+
+reset your branch to the last commit:
+git reset --hard HEAD^
+
+remove untracked files:
+git clean -df
+
