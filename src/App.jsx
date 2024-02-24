@@ -13,11 +13,14 @@ function App() {
     localStorage.setItem("TodoItemfirst", JSON.stringify(listedItem));
   }, [listedItem]);
 
-  function toggleTodo(passedItemID, checkedStatus) {
+  function toggleTodo(passedItemID, checked) {
+    console.log(passedItemID);
+    console.log(checked);
+    
     setListedItem((currentList) => {
       return currentList.map((eachListedItem) => {
         if (eachListedItem.id === passedItemID) {
-          return { ...eachListedItem, checkedStatus };
+          return { ...eachListedItem, completed: checked };
         }
         return eachListedItem;
       });

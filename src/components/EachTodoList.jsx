@@ -1,4 +1,5 @@
-function EachTodoList({ id, completed, title, toggleTodo}) {
+function EachTodoList({ id, completed, title, toggleTodo, deleteTodo}) {
+  console.log()
   return (
     <>
       <li key={id}>

@@ -11,10 +11,10 @@ function TodoList({ listedItem, toggleTodo, deleteTodo }) {
         {listedItem.map((eachListedItem) => {
           return (
             <EachTodoList 
+            {...eachListedItem}
             key={eachListedItem.id}
-            completed={eachListedItem.completed}
-            title={eachListedItem.title}
-            toggleTodo={eachListedItem.toggleTodo}
+            toggleTodo={toggleTodo}
+            deleteTodo={deleteTodo}
             />
           );
         })}
